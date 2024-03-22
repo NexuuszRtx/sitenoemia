@@ -1,0 +1,60 @@
+  /* Cabeçalho */
+  header {
+    background-color: #e7dc3e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  header img {
+    width: 20%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  header p {
+    font-size: 14px;
+  }
+  
+  /* Navegação */
+  nav {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+  }
+  
+  /* Media query para ajustes responsivos */
+  @media only screen and (max-width: 768px) {
+    nav {
+      text-align: center; /* Centralizar a navegação em telas menores */
+    }
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Ajustar o alinhamento se necessário para telas maiores */
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px; /* Ajustar o espaçamento se necessário */
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Considerar aumentar o padding para melhores alvos de toque */
+  }
+  
+  /* Efeito hover para links do menu */
+  nav a:hover {
+    color: #e7dc3e; /* Usar uma cor contrastante ou complementar */
+    background-color: #eee; /* Mudança de fundo sutil opcional ao passar o mouse */
+  }

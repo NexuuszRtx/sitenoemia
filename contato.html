@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Colégio Estadual Professora Noêmia Rêgo</title>
+  <link rel="stylesheet" href="/css/contato.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <img src="/imagens/cpe500px.png" alt="Logo da escola" class="logo">
+      </a>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="cursos.html">Ensino</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="banner">
+      <img src="/imagens/banner-cep.png" alt="Imagem de banner">
+      <div class="texto-banner">
+        <h2>Fale Conosco</h2>
+        <p>
+          Estamos à disposição para atender suas dúvidas, sugestões e críticas.
+        </p>
+      </div>
+    </section>
+
+    
+
+    <section class="contato">
+      <div class="container">
+        <h2>Contato</h2>
+
+        <div class="informacoes-contato">
+          <h3>Informações de Contato</h3>
+          <ul>
+            <li>
+              <p>Endereço:</p>
+              <span>
+                Rua Boca da Mata, 817 - Valeria, Salvador - BA, 41300-460
+              </span>
+            </li>
+            <li>
+              <p>Telefone:</p>
+              <a href="tel:(71) 3301-8358">(71) 3301-8358</a>
+            </li>
+            <li>
+              <p>Email:</p>
+              <a href="colegionoemiarego@gmail.com">colegionoemiarego@gmail.com</a>
+            </li>
+          </ul>
+          <!--<a href="https://maps.app.goo.gl/kzNzWWoXJZKZF8JE9"
+          target="_blank" rel="noopener noreferrer">
+            <img src="/imagens/bannersmaps.png" alt="Localização da escola no Google Maps" class="banner-maps">
+          </a> -->
+          
+          <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHDOYrNP5Xon75jqmUN4Psl4xi5YI9oWI&libraries=maps,marker&v=beta"></script>
+
+          <gmp-map center="-12.86419,-38.43609" zoom="14" map-id="DEMO_MAP_ID" class="mapa">
+          <gmp-advanced-marker position="-12.86419,-38.43609" title="My location"></gmp-advanced-marker></gmp-map>
+        </div>
+        </section>
+        
+        <div class="fale-conosco">
+          <h3>Fale Conosco</h3>
+          <p>
+            Preencha o formulário abaixo para entrar em contato conosco.
+          </p>
+          <form action="enviar.php" method="post" onsubmit="return validaForm()">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione um assunto
+                <option value="matricula">Matrícula</option>
+                <option value="informacao">Informação</option>
+                <option value="duvida">Dúvida</option>
+                <option value="outro">Outro</option>
+              </select>
+  
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+  
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <script>
+      function validaForm() {
+        // Validação do campo nome
+        var nome = document.getElementById("nome").value;
+        if (nome === "") {
+          alert("O campo nome é obrigatório!");
+          return false;
+        }
+  
+        // Validação do campo email
+        var email = document.getElementById("email").value;
+        if (email === "") {
+          alert("O campo email é obrigatório!");
+          return false;
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+          alert("Digite um email válido!");
+          return false;
+        }
+  
+        // Validação do campo assunto
+        var assunto = document.getElementById("assunto").value;
+        if (assunto === "") {
+          alert("Selecione um assunto!");
+          return false;
+        }
+  
+        // Validação do campo mensagem
+        var mensagem = document.getElementById("mensagem").value;
+        if (mensagem === "") {
+          alert("O campo mensagem é obrigatório!");
+          return false;
+        }
+  
+        return true;
+      }
+    
+
+    </script>
+
+   
+    
+  </body>
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2024 - Colégio Estadual Professora Noêmia Rêgo</p>
+      <p>Desenvolvido por: Cazu e <a href="https://ayo.so/nexuusz">Nexuusz</a> <br>
+      <a href="contato.html">Contato</a> | <a href="politica-de-privacidade.html">Política de Privacidade</a>
+    </div>
+  </footer>
+
+  </html>
+  

@@ -1,9 +1,8 @@
   /* Cabeçalho */
   header {
-    background-color: #e7dc3e;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
   }
   
   header h1 {

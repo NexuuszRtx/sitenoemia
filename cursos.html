@@ -2,14 +2,14 @@
 <html lang="pt-br">
 
 <head>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre o Colégio Noêmia Rêgo</title>
     <link rel="stylesheet" href="/css/cursos.css">
-  
+
 </head>
 
 <body>
@@ -30,73 +30,109 @@
 
     <main>
         <section class="sobre">
-          <h1>Ensino Fundamental II (Manhã/Noite)</h1><br>
+            <h1>Ensino Fundamental II (Manhã/Noite)</h1><br>
 
             <img src="imagens/alunos1.jpeg" alt="Foto da Escola">
-            
+
             <p class="palaglafoh2noemia">
-                "O Colégio Noêmia Rêgo oferece ensino fundamental II de qualidade para alunos do 6º ao 9º ano, com foco no desenvolvimento integral dos alunos."
+                "O Colégio Noêmia Rêgo oferece ensino fundamental II de qualidade para alunos do 6º ao 9º ano, com foco
+                no desenvolvimento integral dos alunos."
             </p>
         </section>
-      
+
 
         <section id="quem-somos" class="quem-somos">
-          <h1>Ensino Médio Técnico em Administração (Tarde)</h1><br><br>
+            <h1>Ensino Médio Técnico em Administração (Tarde)</h1><br><br>
             <img src="imagens/noemia2.jpeg" alt="Foto da Sala de Aula">
-            
-            <p> <strong>O Colégio Noêmia Rêgo oferece ensino médio técnico em administração, formando profissionais qualificados para o mercado de trabalho.</strong><br><br>
-            <strong>O Colégio Noêmia Rêgo oferece um ensino de qualidade para todas as idades e necessidades.</strong><br><br>
+
+            <p> <strong>O Colégio Noêmia Rêgo oferece ensino médio técnico em administração, formando profissionais
+                    qualificados para o mercado de trabalho.</strong><br><br>
+                <strong>O Colégio Noêmia Rêgo oferece um ensino de qualidade para todas as idades e
+                    necessidades.</strong><br><br>
 
 
-            <strong> Aulas de português, matemática, ciências, história, geografia, inglês e educação física.
-            Opções de aulas eletivas como espanhol, informática, música e teatro.
-            Ambiente de estudo tranquilo e seguro para que os alunos possam se concentrar nos estudos.</strong><br><br>
+                <strong> Aulas de português, matemática, ciências, história, geografia, inglês e educação física.
+                    Opções de aulas eletivas como espanhol, informática, música e teatro.
+                    Ambiente de estudo tranquilo e seguro para que os alunos possam se concentrar nos
+                    estudos.</strong><br><br>
 
             </p>
         </section>
-  
+
         <section id="proposta" class="proposta">
-          <h2>Habilidades Desenvolvidas</h2>
-           
+            <h2>Habilidades Desenvolvidas</h2>
+
             <ul>
                 <li>Gestão de projetos</li>
                 <li>Recursos humanos</li>
                 <li>Contabilidade</li>
                 <li>Marketing</li>
                 <li>Finanças</li>
-              </ul>
+            </ul>
 
-              <h3>Infraestrutura Moderna e Completa</h3>
+            <h3>Infraestrutura Moderna e Completa</h3>
 
-              <ul>
+            <ul>
                 <li>Laboratórios de informática e ciências</li>
                 <li>Biblioteca</li>
                 <li>Quadra poliesportiva</li>
                 <li>Pátio arborizado</li>
-              </ul>
+            </ul>
 
         </section>
 
-    </section>
-
-    <section class="calendario">
-      <h2>Calendário Escolar</h2>
+        </section>
 
 
-      <p>
-        Acesse o calendário escolar completo e fique por dentro de todas as datas importantes do ano letivo.
-      </p>
+        <section class="banner">
+            <img src="/imagens/alunos1.jpeg" alt="Imagem de banner">
+            <div class="texto-banner">
+              <h2>Se Matricule!</h2>
+              <p>
+                Fale conosco e se matricule em nossa instituição!
+              </p>
+            </div>
+           
+        </section>
+        <section class="faleconosco">
 
-      <a href="https://escolas.educacao.ba.gov.br/sites/default/files/private/midiateca/documentos/2024/calendarioescolar20242701a4_0.pdf">Clique aqui para acessar o calendário</a>
-    </section>
+            <button class="botao-fale">Fale conosco</button>
+
+        </section>
         
+
+    
+
     </main>
+    
+    <script>
+        const botaoCalendario = document.querySelector('.botao-calendario');
+
+        botaoCalendario.addEventListener('click', () => {
+            window.open('https://escolas.educacao.ba.gov.br/sites/default/files/private/midiateca/documentos/2024/calendarioescolar20242701a4_0.pdf', '_blank');
+        }); </script>
+
+    </section>
+
+    <script src="/js/scroll.js"></script>
+    <script>
+
+const botaoFale = document.querySelector('.botao-fale');
+
+botaoFale.addEventListener('click', () => {
+  window.location.href = '/contato.html';
+});
+    </script>
+    
+
     <footer>
         <p>Copyright &copy; 2024 - Cólegio Estadual Professora Noêmia Rêgo</p>
         <p>Desenvolvido por: Cazu e <a href="https://ayo.so/nexuusz">Nexuusz</a> <br>
-            <a href="contato.html">Contato</a> | <a href="politica-de-privacidade.html">Política de Privacidade</a>
+           
         </p>
     </footer>
-    <script src="/js/scroll.js"></script>
+
+
 </body>
+
 </html>

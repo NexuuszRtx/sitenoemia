@@ -124,12 +124,32 @@
               </li>
             </ul>
           </section>
+
+          <section class="calendario">
+            <h2>Calendário Escolar</h2>
+
+
+            <p>
+                Acesse o calendário escolar completo e fique por dentro de todas as datas importantes do ano letivo.
+            </p><br>
+                <button class="botao-calendario">Acesse o calendário</button>
+        </section>
+
+        <script>
+
+          const botaoCalendario = document.querySelector('.botao-calendario');
+          
+          botaoCalendario.addEventListener('click', () => {
+            window.location.href = 'https://escolas.educacao.ba.gov.br/sites/default/files/private/midiateca/documentos/2024/calendarioescolar20242701a4_0.pdf';
+          });
+              </script>
+
           
     </main>
     <footer>
         <p>Copyright &copy; 2024 - Cólegio Estadual Professora Noêmia Rêgo</p>
         <p>Desenvolvido por: Cazu e <a href="https://ayo.so/nexuusz">Nexuusz</a> <br>
-            <a href="contato.html">Contato</a> | <a href="politica-de-privacidade.html">Política de Privacidade</a>
+            
         </p>
     </footer>
     <script src="/js/scroll.js"></script>
